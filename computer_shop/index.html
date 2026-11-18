@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComputeX | Home</title>
+    <link rel="stylesheet" href="/computer_shop/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/computer_shop/assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/computer_shop/assets/img/logo-mark.svg"
+    />
+  </head>
+  <body>
+    <!-- ================= Navbar ================= -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="/computer_shop/index.html">
+          <img
+            src="/computer_shop/assets/img/logo.svg"
+            alt="ComputeX"
+            class="brand-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/computer_shop/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/computer_shop/about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Products</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/computer_shop/products.html#laptops"
+                    >Laptops</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/computer_shop/products.html#desktops"
+                    >Desktops</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/computer_shop/products.html#monitors"
+                    >Monitors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/computer_shop/products.html#accessories"
+                    >Accessories</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/computer_shop/productmenu.html"
+                    >Full Menu</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/computer_shop/contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= Hero (slide / carousel) ================= -->
+    <header
+      id="heroCarousel"
+      class="carousel slide hero-carousel"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="hero-slide"
+            style="
+              background-image: url(&quot;/computer_shop/assets/img/laptop-gameforce.jpg&quot;);
+            "
+          >
+            <div class="container text-center py-5">
+              <h1 class="display-4 fw-bold">Build Your Perfect PC</h1>
+              <p class="lead mx-auto" style="max-width: 660px">
+                Laptops, desktops, monitors and accessories &mdash; hand-picked
+                for gamers, students and professionals.
+              </p>
+              <div class="mt-4">
+                <a
+                  href="/computer_shop/products.html"
+                  class="btn btn-primary btn-lg"
+                  >Shop Now</a
+                >
+                <a
+                  href="/computer_shop/about.html"
+                  class="btn btn-outline-light btn-lg ms-2"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div
+            class="hero-slide"
+            style="
+              background-image: url(&quot;/computer_shop/assets/img/desktop-titan.jpg&quot;);
+            "
+          >
+            <div class="container text-center py-5">
+              <h1 class="display-4 fw-bold">Power for Every Game</h1>
+              <p class="lead mx-auto" style="max-width: 660px">
+                RTX graphics, Ryzen processors and lightning-fast SSDs &mdash;
+                gaming desktops built to crush any title.
+              </p>
+              <div class="mt-4">
+                <a
+                  href="/computer_shop/products.html#desktops"
+                  class="btn btn-primary btn-lg"
+                  >Gaming Desktops</a
+                >
+                <a
+                  href="/computer_shop/contact.html"
+                  class="btn btn-outline-light btn-lg ms-2"
+                  >Ask an Expert</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div
+            class="hero-slide"
+            style="
+              background-image: url(&quot;/computer_shop/assets/img/monitor-ultrawide.jpg&quot;);
+            "
+          >
+            <div class="container text-center py-5">
+              <h1 class="display-4 fw-bold">See Every Detail</h1>
+              <p class="lead mx-auto" style="max-width: 660px">
+                Ultra-wide 4K monitors, crystal-clear panels and pro-grade
+                accessories to complete your setup.
+              </p>
+              <div class="mt-4">
+                <a
+                  href="/computer_shop/products.html#monitors"
+                  class="btn btn-primary btn-lg"
+                  >Shop Monitors</a
+                >
+                <a
+                  href="/computer_shop/products.html#accessories"
+                  class="btn btn-outline-light btn-lg ms-2"
+                  >Accessories</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prev / Next controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </header>
+
+    <!-- ================= Featured products ================= -->
+    <section class="container py-5">
+      <h2 class="section-title text-center mb-4">Featured Products</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <a href="/computer_shop/products.html#laptops">
+              <img
+                src="/computer_shop/assets/img/laptop-novabook.jpg"
+                class="product-img card-img-top"
+                alt="NovaBook Pro 14 laptop"
+              />
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">NovaBook Pro 14</h5>
+              <p class="card-text text-secondary small">
+                14&Prime; ultrabook &middot; Intel Core i7 &middot; 16&nbsp;GB
+                RAM &middot; 512&nbsp;GB SSD.
+              </p>
+              <p class="price mb-3">$1,299</p>
+              <a
+                href="/computer_shop/products.html#laptops"
+                class="btn btn-primary mt-auto"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <a href="/computer_shop/products.html#desktops">
+              <img
+                src="/computer_shop/assets/img/desktop-titan.jpg"
+                class="product-img card-img-top"
+                alt="Titan Gaming Desktop"
+              />
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Titan Gaming Desktop</h5>
+              <p class="card-text text-secondary small">
+                Ryzen 7 &middot; RTX 4070 &middot; 32&nbsp;GB RAM &middot;
+                1&nbsp;TB NVMe SSD.
+              </p>
+              <p class="price mb-3">$1,899</p>
+              <a
+                href="/computer_shop/products.html#desktops"
+                class="btn btn-primary mt-auto"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card product-card shadow-sm">
+            <a href="/computer_shop/products.html#monitors">
+              <img
+                src="/computer_shop/assets/img/monitor-ultrawide.jpg"
+                class="product-img card-img-top"
+                alt="UltraWide 34 inch monitor"
+              />
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">UltraWide 34&Prime; Monitor</h5>
+              <p class="card-text text-secondary small">
+                3440&times;1440 &middot; 144&nbsp;Hz &middot; HDR400 &middot;
+                USB-C.
+              </p>
+              <p class="price mb-3">$499</p>
+              <a
+                href="/computer_shop/products.html#monitors"
+                class="btn btn-primary mt-auto"
+                >View Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Features ================= -->
+    <section class="bg-body-tertiary py-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <div class="feature-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="1em"
+                height="1em"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="vertical-align: -0.15em"
+              >
+                <rect x="2" y="7" width="12" height="9" rx="1" />
+                <path d="M14 10h4l3 3v3h-7z" />
+                <circle cx="6.5" cy="18.5" r="1.8" />
+                <circle cx="17.5" cy="18.5" r="1.8" />
+              </svg>
+            </div>
+            <h5 class="mt-2">Free Shipping</h5>
+            <p class="text-secondary small mb-0">
+              Free nationwide delivery on every order over $99.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="1em"
+                height="1em"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="vertical-align: -0.15em"
+              >
+                <path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" />
+                <path d="M9 11.5l2 2 4-4" />
+              </svg>
+            </div>
+            <h5 class="mt-2">2-Year Warranty</h5>
+            <p class="text-secondary small mb-0">
+              All hardware is covered by a full two-year warranty.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="1em"
+                height="1em"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="vertical-align: -0.15em"
+              >
+                <path d="M4 13v-1a8 8 0 0 1 16 0v1" />
+                <rect x="2.5" y="13" width="4" height="6" rx="1.5" />
+                <rect x="17.5" y="13" width="4" height="6" rx="1.5" />
+                <path d="M19.5 19a4 4 0 0 1-4 3.5H13" />
+              </svg>
+            </div>
+            <h5 class="mt-2">Expert Support</h5>
+            <p class="text-secondary small mb-0">
+              Friendly technicians available 7 days a week.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-band text-center py-5">
+      <div class="container">
+        <h2 class="section-title mb-3">Need help choosing a computer?</h2>
+        <p class="mb-4">
+          Our team will help you find the perfect machine for your budget.
+        </p>
+        <a href="/computer_shop/contact.html" class="btn btn-light btn-lg"
+          >Contact Us</a
+        >
+      </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+    <footer class="site-footer py-4">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-4">
+            <h6 class="d-flex align-items-center gap-2">
+              <img
+                src="/computer_shop/assets/img/logo-mark.svg"
+                alt=""
+                class="brand-mark"
+              />ComputeX
+            </h6>
+            <p class="small mb-0">
+              Your trusted computer shop for laptops, desktops, monitors and
+              accessories.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h6>Quick Links</h6>
+            <ul class="list-unstyled small mb-0">
+              <li><a href="/computer_shop/index.html">Home</a></li>
+              <li><a href="/computer_shop/about.html">About Us</a></li>
+              <li><a href="/computer_shop/products.html">Products</a></li>
+              <li><a href="/computer_shop/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6>Get in touch</h6>
+            <p class="small mb-0">
+              578 TK Street, Phnom Penh City<br />(885) 937-01973<br />msoaye9@gmail.com
+            </p>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <p class="text-center small mb-0">
+          &copy; 2026 ComputeX &mdash; Computer Shop. Built with HTML, CSS &amp;
+          Bootstrap 5. By Deverloper Vanroth
+        </p>
+      </div>
+    </footer>
+
+    <script src="/computer_shop/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

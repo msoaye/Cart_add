@@ -1,0 +1,388 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComputeX | Products</title>
+  <link rel="stylesheet" href="/computer_shop/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/computer_shop/assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/computer_shop/assets/img/logo-mark.svg">
+</head>
+<body>
+
+  <!-- ================= Navbar ================= -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/computer_shop/index.html"><img src="/computer_shop/assets/img/logo.svg" alt="ComputeX" class="brand-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/computer_shop/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/computer_shop/about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/computer_shop/products.html#laptops">Laptops</a></li>
+              <li><a class="dropdown-item" href="/computer_shop/products.html#desktops">Desktops</a></li>
+              <li><a class="dropdown-item" href="/computer_shop/products.html#monitors">Monitors</a></li>
+              <li><a class="dropdown-item" href="/computer_shop/products.html#accessories">Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/computer_shop/productmenu.html">Full Menu</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/computer_shop/contact.html">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= Shopping Cart Sidebar ================= -->
+  <div class="position-fixed top-0 end-0 h-100 w-25 p-3" style="background: #f8f9fa;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h5 class="mb-0">🛒 Shopping Cart</h5>
+      <span id="cart-count" class="badge bg-primary rounded-pill">0</span>
+    </div>
+    <div class="border rounded p-3" style="max-height: calc(100vh - 100px); overflow-y: auto;">
+      <div id="cart-empty" class="text-center text-muted py-3">
+        <p class="mb-2">Your cart is empty</p>
+        <button class="btn btn-sm btn-outline-primary" onclick="clearCart()">Start Shopping</button>
+      </div>
+      <div id="cart-body" class="pt-2"></div>
+      <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+        <span class="text-success fw-bold" id="cart-value"><strong>$0.00</strong></span>
+        <button class="btn btn-outline-success btn-sm" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Page header ================= -->
+  <header class="hero text-center">
+    <div class="container py-5">
+      <h1 class="display-5 fw-bold">Our Products</h1>
+      <p class="lead mx-auto" style="max-width: 640px;">Laptops, desktops, monitors and accessories &mdash; everything you need in one place.</p>
+    </div>
+  </header>
+
+  <!-- ================= Laptops ================= -->
+  <section id="laptops" class="container py-5">
+    <h2 class="section-title mb-4"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg> Laptops</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="novabook" data-product-name="NovaBook Pro 14" data-product-price="1299">
+          <a href="#laptops">
+            <img src="/computer_shop/assets/img/laptop-novabook.jpg" class="product-img card-img-top" alt="NovaBook Pro 14 laptop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">NovaBook Pro 14</h5>
+            <p class="card-text text-secondary small">Intel Core i7 &middot; 16&nbsp;GB RAM &middot; 512&nbsp;GB SSD &middot; 14&Prime;.</p>
+            <p class="price mb-3">$1,299</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="novabook">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="aeroslim" data-product-name="AeroSlim 13" data-product-price="799">
+          <a href="#laptops">
+            <img src="/computer_shop/assets/img/laptop-aeroslim.jpg" class="product-img card-img-top" alt="AeroSlim 13 laptop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AeroSlim 13</h5>
+            <p class="card-text text-secondary small">Intel Core i5 &middot; 8&nbsp;GB RAM &middot; 256&nbsp;GB SSD &middot; 13&Prime;.</p>
+            <p class="price mb-3">$799</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="aeroslim">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="gameforce" data-product-name="GameForce 16" data-product-price="1499">
+          <a href="#laptops">
+            <img src="/computer_shop/assets/img/laptop-gameforce.jpg" class="product-img card-img-top" alt="GameForce 16 laptop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">GameForce 16</h5>
+            <p class="card-text text-secondary small">Ryzen 7 &middot; RTX 4060 &middot; 16&nbsp;GB RAM &middot; 1&nbsp;TB SSD.</p>
+            <p class="price mb-3">$1,499</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="gameforce">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="budgetbook" data-product-name="BudgetBook 15" data-product-price="449">
+          <a href="#laptops">
+            <img src="/computer_shop/assets/img/laptop-novabook.jpg" class="product-img card-img-top" alt="BudgetBook 15 laptop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BudgetBook 15</h5>
+            <p class="card-text text-secondary small">Intel Celeron &middot; 4&nbsp;GB RAM &middot; 64&nbsp;GB eMMC.</p>
+            <p class="price mb-3">$449</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="budgetbook">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="ultrabook" data-product-name="UltraBook 16" data-product-price="1099">
+          <a href="#laptops">
+            <img src="/computer_shop/assets/img/laptop-aeroslim.jpg" class="product-img card-img-top" alt="UltraBook 16 laptop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">UltraBook 16</h5>
+            <p class="card-text text-secondary small">Intel Core i7 &middot; 16&nbsp;GB RAM &middot; 512&nbsp;GB SSD.</p>
+            <p class="price mb-3">$1,099</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="ultrabook">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= Desktops ================= -->
+  <section id="desktops" class="container pb-5">
+    <h2 class="section-title mb-4"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><rect x="2" y="5" width="13" height="9" rx="1"/><path d="M8.5 17h2"/><rect x="17.5" y="4" width="4.5" height="16" rx="1"/></svg> Desktops</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="titan" data-product-name="Titan Gaming Desktop" data-product-price="1899">
+          <a href="#desktops">
+            <img src="/computer_shop/assets/img/desktop-titan.jpg" class="product-img card-img-top" alt="Titan Gaming Desktop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Titan Gaming Desktop</h5>
+            <p class="card-text text-secondary small">Ryzen 7 &middot; RTX 4070 &middot; 32&nbsp;GB RAM &middot; 1&nbsp;TB NVMe.</p>
+            <p class="price mb-3">$1,899</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="titan">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="officemini" data-product-name="OfficeMini Cube" data-product-price="649">
+          <a href="#desktops">
+            <img src="/computer_shop/assets/img/desktop-officemini.jpg" class="product-img card-img-top" alt="OfficeMini Cube desktop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">OfficeMini Cube</h5>
+            <p class="card-text text-secondary small">Intel Core i5 &middot; 16&nbsp;GB RAM &middot; 512&nbsp;GB SSD.</p>
+            <p class="price mb-3">$649</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="officemini">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="creator" data-product-name="Creator Workstation" data-product-price="2799">
+          <a href="#desktops">
+            <img src="/computer_shop/assets/img/desktop-creator.jpg" class="product-img card-img-top" alt="Creator Workstation desktop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Creator Workstation</h5>
+            <p class="card-text text-secondary small">Threadripper &middot; 64&nbsp;GB RAM &middot; 2&nbsp;TB NVMe.</p>
+            <p class="price mb-3">$2,799</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="creator">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="homedesk" data-product-name="HomeOffice Desktop" data-product-price="899">
+          <a href="#desktops">
+            <img src="/computer_shop/assets/img/desktop-officemini.jpg" class="product-img card-img-top" alt="HomeOffice Desktop">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">HomeOffice Desktop</h5>
+            <p class="card-text text-secondary small">Intel Core i5 &middot; 8&nbsp;GB RAM &middot; 256&nbsp;GB SSD &middot; Office suite included.</p>
+            <p class="price mb-3">$899</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="homedesk">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= Monitors ================= -->
+  <section id="monitors" class="container pb-5">
+    <h2 class="section-title mb-4"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M12 17v3M8 20h8"/></svg> Monitors</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="ultrawide" data-product-name="UltraWide 34" data-product-price="499">
+          <a href="#monitors">
+            <img src="/computer_shop/assets/img/monitor-ultrawide.jpg" class="product-img card-img-top" alt="UltraWide 34 inch monitor">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">UltraWide 34″</h5>
+            <p class="card-text text-secondary small">3440×1440 &middot; 144&nbsp;Hz &middot; HDR400 &middot; USB-C.</p>
+            <p class="price mb-3">$499</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="ultrawide">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="clearview" data-product-name="ClearView 27 4K" data-product-price="379">
+          <a href="#monitors">
+            <img src="/computer_shop/assets/img/monitor-clearview.jpg" class="product-img card-img-top" alt="ClearView 27 inch 4K monitor">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ClearView 27″ 4K</h5>
+            <p class="card-text text-secondary small">3840×2160 &middot; IPS &middot; 60&nbsp;Hz.</p>
+            <p class="price mb-3">$379</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="clearview">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="swiftplay" data-product-name="SwiftPlay 24" data-product-price="199">
+          <a href="#monitors">
+            <img src="/computer_shop/assets/img/monitor-swiftplay.jpg" class="product-img card-img-top" alt="SwiftPlay 24 inch monitor">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">SwiftPlay 24″</h5>
+            <p class="card-text text-secondary small">1920×1080 &middot; 165&nbsp;Hz &middot; 1&nbsp;ms.</p>
+            <p class="price mb-3">$199</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="swiftplay">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="gamingmon" data-product-name="Gaming Monitor 27" data-product-price="349">
+          <a href="#monitors">
+            <img src="/computer_shop/assets/img/monitor-ultrawide.jpg" class="product-img card-img-top" alt="Gaming Monitor 27 inch">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Gaming Monitor 27″</h5>
+            <p class="card-text text-secondary small">1920×1080 &middot; 144&nbsp;Hz &middot; 1&nbsp;ms &middot; FreeSync.</p>
+            <p class="price mb-3">$349</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="gamingmon">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= Accessories ================= -->
+  <section id="accessories" class="container pb-5">
+    <h2 class="section-title mb-4"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><circle cx="12" cy="4" r="1.6"/><path d="M12 5.6V12"/><rect x="8" y="12" width="8" height="8" rx="1.5"/><path d="M10 16h4"/></svg> Accessories</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="keyboard" data-product-name="Mechanical Keyboard" data-product-price="89">
+          <a href="#accessories">
+            <img src="/computer_shop/assets/img/acc-keyboard.jpg" class="product-img card-img-top" alt="Mechanical Keyboard">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Mechanical Keyboard</h5>
+            <p class="card-text text-secondary small">RGB backlit &middot; hot-swappable switches.</p>
+            <p class="price mb-3">$89</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="keyboard">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="mouse" data-product-name="Wireless Mouse" data-product-price="39">
+          <a href="#accessories">
+            <img src="/computer_shop/assets/img/acc-mouse.jpg" class="product-img card-img-top" alt="Wireless Mouse">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Wireless Mouse</h5>
+            <p class="card-text text-secondary small">Ergonomic &middot; 16000 DPI &middot; silent clicks.</p>
+            <p class="price mb-3">$39</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="mouse">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="hub" data-product-name="USB-C Hub" data-product-price="59">
+          <a href="#accessories">
+            <img src="/computer_shop/assets/img/acc-hub.jpg" class="product-img card-img-top" alt="USB-C Hub">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">USB-C Hub</h5>
+            <p class="card-text text-secondary small">7-in-1 &middot; HDMI &middot; card reader &middot; 100 W PD.</p>
+            <p class="price mb-3">$59</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="hub">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="headphones" data-product-name="Wireless Headphones" data-product-price="79">
+          <a href="#accessories">
+            <img src="/computer_shop/assets/img/acc-mouse.jpg" class="product-img card-img-top" alt="Wireless Headphones">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Wireless Headphones</h5>
+            <p class="card-text text-secondary small">Over-ear &middot; 30h battery &middot; noise cancelling.</p>
+            <p class="price mb-3">$79</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="headphones">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm" data-product-id="webcam" data-product-name="WebCam 1080p" data-product-price="59">
+          <a href="#accessories">
+            <img src="/computer_shop/assets/img/acc-hub.jpg" class="product-img card-img-top" alt="WebCam 1080p">
+          </a>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">WebCam 1080p</h5>
+            <p class="card-text text-secondary small">1080p &middot; auto-focus &middot; noise-free mic.</p>
+            <p class="price mb-3">$59</p>
+            <button type="button" class="btn btn-primary mt-auto" data-add-to-cart="webcam">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <h6 class="d-flex align-items-center gap-2"><img src="/computer_shop/assets/img/logo-mark.svg" alt="" class="brand-mark">ComputeX</h6>
+          <p class="small mb-0">Your trusted computer shop for laptops, desktops, monitors and accessories.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a href="/computer_shop/index.html">Home</a></li>
+            <li><a href="/computer_shop/about.html">About Us</a></li>
+            <li><a href="/computer_shop/products.html">Products</a></li>
+            <li><a href="/computer_shop/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Get in touch</h6>
+          <p class="small mb-0">123 Tech Street, Silicon City<br>(123) 456-7890<br>sales@computex.example</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center small mb-0">&copy; 2026 ComputeX &mdash; Computer Shop. Built with HTML, CSS &amp; Bootstrap 5.</p>
+    </div>
+  </footer>
+
+  <script src="/computer_shop/assets/js/cart.js"></script>
+  <script src="/computer_shop/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

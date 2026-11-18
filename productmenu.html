@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComputeX | Product Menu</title>
+  <link rel="stylesheet" href="/computer_shop/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/computer_shop/assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/computer_shop/assets/img/logo-mark.svg">
+</head>
+<body>
+
+  <!-- ================= Navbar ================= -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/computer_shop/index.html"><img src="/computer_shop/assets/img/logo.svg" alt="ComputeX" class="brand-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/computer_shop/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/computer_shop/about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/computer_shop/products.html#laptops">Laptops</a></li>
+              <li><a class="dropdown-item" href="/computer_shop/products.html#desktops">Desktops</a></li>
+              <li><a class="dropdown-item" href="/computer_shop/products.html#monitors">Monitors</a></li>
+              <li><a class="dropdown-item" href="/computer_shop/products.html#accessories">Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/computer_shop/productmenu.html">Full Menu</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/computer_shop/contact.html">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= Page header ================= -->
+  <header class="hero text-center">
+    <div class="container py-5">
+      <h1 class="display-5 fw-bold">Product Menu</h1>
+      <p class="lead mx-auto" style="max-width: 640px;">Every category we stock, at a glance. Prices shown in USD.</p>
+    </div>
+  </header>
+
+  <!-- ================= Menu ================= -->
+  <section class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+        <div class="card shadow-sm category-tile">
+          <div class="card-header fw-bold"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg> Laptops</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">NovaBook Pro 14 <span class="price">$1,299</span></li>
+            <li class="list-group-item d-flex justify-content-between">AeroSlim 13 <span class="price">$799</span></li>
+            <li class="list-group-item d-flex justify-content-between">GameForce 16 <span class="price">$1,499</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card shadow-sm category-tile">
+          <div class="card-header fw-bold"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><rect x="2" y="5" width="13" height="9" rx="1"/><path d="M8.5 17h2"/><rect x="17.5" y="4" width="4.5" height="16" rx="1"/></svg> Desktops</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">Titan Gaming Desktop <span class="price">$1,899</span></li>
+            <li class="list-group-item d-flex justify-content-between">OfficeMini Cube <span class="price">$649</span></li>
+            <li class="list-group-item d-flex justify-content-between">Creator Workstation <span class="price">$2,799</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card shadow-sm category-tile">
+          <div class="card-header fw-bold"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M12 17v3M8 20h8"/></svg> Monitors</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">UltraWide 34&Prime; <span class="price">$499</span></li>
+            <li class="list-group-item d-flex justify-content-between">ClearView 27&Prime; 4K <span class="price">$379</span></li>
+            <li class="list-group-item d-flex justify-content-between">SwiftPlay 24&Prime; <span class="price">$199</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card shadow-sm category-tile">
+          <div class="card-header fw-bold"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><circle cx="12" cy="4" r="1.6"/><path d="M12 5.6V12"/><rect x="8" y="12" width="8" height="8" rx="1.5"/><path d="M10 16h4"/></svg> Accessories</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">Mechanical Keyboard <span class="price">$89</span></li>
+            <li class="list-group-item d-flex justify-content-between">Wireless Mouse <span class="price">$39</span></li>
+            <li class="list-group-item d-flex justify-content-between">USB-C Hub <span class="price">$59</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta-band text-center py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Want the full details?</h2>
+      <p class="mb-4">See specifications, photos and stock for every product.</p>
+      <a href="/computer_shop/products.html" class="btn btn-light btn-lg">Browse All Products</a>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <h6 class="d-flex align-items-center gap-2"><img src="/computer_shop/assets/img/logo-mark.svg" alt="" class="brand-mark">ComputeX</h6>
+          <p class="small mb-0">Your trusted computer shop for laptops, desktops, monitors and accessories.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a href="/computer_shop/index.html">Home</a></li>
+            <li><a href="/computer_shop/about.html">About Us</a></li>
+            <li><a href="/computer_shop/products.html">Products</a></li>
+            <li><a href="/computer_shop/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Get in touch</h6>
+          <p class="small mb-0">123 Tech Street, Silicon City<br>(123) 456-7890<br>sales@computex.example</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center small mb-0">&copy; 2026 ComputeX &mdash; Computer Shop. Built with HTML, CSS &amp; Bootstrap 5.</p>
+    </div>
+  </footer>
+
+  <script src="/computer_shop/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

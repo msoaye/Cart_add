@@ -1,0 +1,172 @@
+/* ============================================================
+   ComputeX - Computer Shop
+   Custom styles built on top of Bootstrap 5 (plain CSS only)
+   ============================================================ */
+
+/* ---------- Global ---------- */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+/* Keep anchored sections clear of the sticky navbar */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+/* ---------- Page header banner (static hero) ---------- */
+.hero {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b4965 100%);
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.hero .lead {
+  color: #cfe3f0;
+}
+
+/* ---------- Hero (slide / carousel) ---------- */
+.hero-carousel {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b4965 100%);
+}
+
+.hero-slide {
+  position: relative;
+  padding: 5.5rem 0;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  isolation: isolate;
+}
+
+/* Dark overlay so the text stays readable over any photo */
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    135deg,
+    rgba(13, 27, 42, 0.85) 0%,
+    rgba(27, 73, 101, 0.7) 100%
+  );
+}
+
+.hero-carousel .lead {
+  color: #cfe3f0;
+}
+
+/* Indicators + arrows tuned to the dark hero */
+.hero-carousel .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.hero-carousel .carousel-indicators button.active {
+  background-color: #2a9d8f;
+  border-color: #2a9d8f;
+}
+
+.hero-carousel .carousel-control-prev-icon,
+.hero-carousel .carousel-control-next-icon {
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.6));
+}
+
+/* ---------- Product cards ---------- */
+.product-card {
+  height: 100%;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
+}
+
+.product-img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background: #eef2f6;
+  border-bottom: 1px solid #e3e8ee;
+}
+
+/* Product images are wrapped in a link */
+.product-card a {
+  display: block;
+  text-decoration: none;
+}
+
+.price {
+  font-weight: 700;
+  color: #1b4965;
+}
+
+/* ---------- Category tiles ---------- */
+.category-tile {
+  transition: transform .2s ease, box-shadow .2s ease;
+  height: 100%;
+}
+
+.category-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .12) !important;
+}
+
+/* ---------- Feature icons ---------- */
+.feature-icon {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+/* ---------- CTA band ---------- */
+.cta-band {
+  background: #1b4965;
+  color: #fff;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: #0d1b2a;
+  color: #adb5bd;
+}
+
+.site-footer h6 {
+  color: #fff;
+}
+
+.site-footer a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ---------- Brand logo ---------- */
+.brand-logo {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
+.brand-mark {
+  height: 26px;
+  width: 26px;
+  border-radius: 8px;
+}
